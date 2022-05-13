@@ -1,0 +1,35 @@
+<h1>Welcome to {{title}}</h1>
+
+<h2>ngClass</h2><br>
+<div [ngClass]="'one'">
+  ngClass static
+</div><br><br>
+
+<div [ngClass]="classng">
+  ngClass dynamic
+</div><br><br>
+
+<div [ngClass]="[classng,classng1]">
+  ngClass array
+</div><br><br>
+
+<div [ngClass]="{'one':true ,'two':true}">
+  ngClass with Expression
+</div>
+
+<h2>ngStyle</h2><br>
+<div [ngStyle]="{'color':'red'}">
+  ngStyle
+</div><br><br>
+
+<div [ngStyle]="{'color':'red','background-color':'lightblue'}">
+  ngStyle
+</div><br><br>
+
+<div [ngStyle]="{'color':colorValue,'background-color':bgColor}">
+  ngStyle7
+</div><br><br>
+
+<a [ngStyle]="{'color':colorValue,'background-color':bgColor}" href="">
+  ngStyle Link
+</a><br><br>
